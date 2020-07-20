@@ -1,4 +1,4 @@
-package com.kany.chess;
+package com.kany.util;
 
 public class Constant {
   public static final int ASCII_A = 65;

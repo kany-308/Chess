@@ -1,4 +1,4 @@
-package com.kany.chess;
+package com.kany.util;
 
 import java.util.ArrayList;
 import java.util.List;

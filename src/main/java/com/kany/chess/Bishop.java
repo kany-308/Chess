@@ -2,6 +2,7 @@ package com.kany.chess;
 
 import java.util.ArrayList;
 import java.util.List;
+import com.kany.util.Helper;
 
 public class Bishop implements Piece {
 

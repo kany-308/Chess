@@ -1,6 +1,7 @@
 package com.kany.chess;
 
 import java.util.Scanner;
+import com.kany.util.Helper;
 
 public class ChessClient {
 
