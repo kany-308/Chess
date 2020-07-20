@@ -1,11 +1,17 @@
 package com.kany.chess;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Bishop implements Piece {
 
   @Override
   public String possibleMovement(String position) {
-    // TODO Auto-generated method stub
-    return null;
+    int i = Helper.getRowIndexFromPosition(position);
+    int j = Helper.getColumnIndexFromPosition(position);
+    List<String> result = new ArrayList<>();
+    result.addAll(Helper.getDiagonalMovements(i, j));
+    return String.join(",", result);
   }
 
 }
