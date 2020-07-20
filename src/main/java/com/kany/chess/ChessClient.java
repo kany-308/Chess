@@ -18,20 +18,29 @@ public class ChessClient {
       strArr = input.split(" ");
     } while (!isValidInput(strArr));
 
+    Piece piece = null;
     switch (strArr[0]) {
       case "King":
+        piece = new King();
         break;
       case "Queen":
+        piece = new Queen();
         break;
       case "Bishop":
+        piece = new Bishop();
         break;
       case "Horse":
+        piece = new Horse();
         break;
       case "Rook":
+        piece = new Rook();
         break;
       case "Pawn":
+        piece = new Pawn();
         break;
     }
+    Context context = new Context(piece);
+    System.out.println(context.possibleMovements(strArr[1]));
     sc.close();
   }
 

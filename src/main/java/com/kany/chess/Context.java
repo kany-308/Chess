@@ -7,7 +7,7 @@ public class Context {
     this.piece = piece;
   }
 
-  public void possibleMovements(String pos) {
-    piece.possibleMovement(pos);
+  public String possibleMovements(String pos) {
+    return piece.possibleMovement(pos);
   }
 }
